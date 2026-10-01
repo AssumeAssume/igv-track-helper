@@ -1,0 +1,30 @@
+{
+  "version": "0.4.0",
+  "environment": "Offline Chromium, synthetic native-shaped IGV test double; NOT a live KU Leuven deployment",
+  "passed": 23,
+  "checks": [
+    "No presets/visibility controls; 8px top/right; auto-show only in selection mode",
+    "Select All / Invert / Undo / Redo use native selection state",
+    "Shift range and custom-label Shift-click remain functional",
+    "Name/include/exclude/type filters, invalid-regex guard and Copy Names",
+    "Non-adjacent group drag via canvas adapter updates every column/model/session order; native drag suppressed",
+    "Group move Undo / Redo preserve original relative order and selection",
+    "Selection history and order history interleave correctly",
+    "Moving upward keeps ruler/ideogram pinned and selected tracks in original order",
+    "Click-without-drag and release outside viewer leave order unchanged",
+    "A single rendered canvas discovers all tracks; reinstall is idempotent",
+    "Native reorder failure is rolled back and reported without a success claim",
+    "Single-track and unselected-handle native dragging remain untouched",
+    "Multiple IGV viewers remain isolated during group reorder",
+    "Track addition during drag cancels the move safely",
+    "Shift range follows the new visual track order",
+    "Unsupported sorting adapter refuses group move while selection tools still work",
+    "Group dragging autoscrolls the inner track list at its edge",
+    "Duplicate track names are safely resolved by track object identity",
+    "Toolbar dragging/collapse persists only UI settings, not presets",
+    "No uncaught JavaScript errors in checked scenarios",
+    "Same-origin iframe auto-detection uses a frame-local toolbar and model adapter",
+    "Group drag and order Undo work within the same-origin iframe",
+    "Ordinary DOM (without Shadow DOM) detection and model adapter remain supported"
+  ]
+}
